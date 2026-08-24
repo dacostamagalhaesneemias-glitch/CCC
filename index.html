@@ -270,7 +270,7 @@ thead th{background:#F5F7FA;color:#667085;font-weight:800}
 
 <div id="login-screen">
   <div class="login-card">
-    <div class="login-brand"><div class="login-logo">CC</div><div><div class="login-brand-title">Controle de Compras</div><div class="login-brand-sub">Acesso ao ambiente compartilhado</div></div></div>
+    <div class="login-brand"><div class="login-logo">CC</div><div><div class="login-brand-title">Central de Compras e Cotações</div><div class="login-brand-sub">Acesso ao ambiente compartilhado</div></div></div>
     <h1>Entrar</h1>
     <div class="login-intro">Use seu e-mail e senha cadastrados para acessar o sistema.</div>
     <form id="login-form" onsubmit="login(event)">
@@ -645,7 +645,7 @@ function nav(page,data=null){
   if((page==='aux'||page==='usuarios')&&!isAdmin()){toast('Acesso restrito ao administrador','err');page='dashboard';}
   document.querySelectorAll('.sb-a').forEach(e=>e.classList.toggle('on',e.dataset.p===page));
   const m=PM[page]||{t:page,s:''};
-  document.getElementById('tb-t').textContent='Controle de Compras';
+  document.getElementById('tb-t').textContent='Central de Compras e Cotações';
   document.getElementById('tb-s').textContent=m.s||m.t||'';
   document.getElementById('sb').classList.remove('open');
   destroyCharts();
